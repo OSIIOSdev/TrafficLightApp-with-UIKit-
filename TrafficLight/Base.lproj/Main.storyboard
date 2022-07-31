@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-2U-YHP">
-                                <rect key="frame" x="110" y="64" width="208" height="208"/>
+                                <rect key="frame" x="110" y="20" width="100" height="100"/>
                                 <color key="backgroundColor" red="1" green="0.25981115839607416" blue="0.087439240638411575" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="7DV-uu-mDl"/>
@@ -26,15 +26,15 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdK-pm-xv7">
-                                <rect key="frame" x="110" y="280" width="208" height="208"/>
+                                <rect key="frame" x="110" y="128" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJA-91-Obe">
-                                <rect key="frame" x="110" y="496" width="208" height="210"/>
+                                <rect key="frame" x="110" y="236" width="100" height="101"/>
                                 <color key="backgroundColor" red="0.13548756815868945" green="0.86078917980194092" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMu-eH-NOp">
-                                <rect key="frame" x="69.333333333333343" y="802" width="289.33333333333326" height="50"/>
+                                <rect key="frame" x="85" y="390" width="150" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="j3K-9o-Nvc"/>
@@ -69,13 +69,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collorButton" destination="uMu-eH-NOp" id="rPf-s8-IHS"/>
-                        <outlet property="greenView" destination="KJA-91-Obe" id="Wt9-z0-WOw"/>
-                        <outlet property="redView" destination="cjP-2U-YHP" id="1Cb-Mg-3FJ"/>
-                        <outlet property="yellowView" destination="mdK-pm-xv7" id="h6J-zA-MNK"/>
-                        <outletCollection property="collorViewsCollection" destination="cjP-2U-YHP" collectionClass="NSMutableArray" id="Csw-bp-g1Q"/>
-                        <outletCollection property="collorViewsCollection" destination="mdK-pm-xv7" collectionClass="NSMutableArray" id="PFx-rJ-Zj4"/>
-                        <outletCollection property="collorViewsCollection" destination="KJA-91-Obe" collectionClass="NSMutableArray" id="Pd0-gP-Rtf"/>
+                        <outlet property="changeButton" destination="uMu-eH-NOp" id="dly-u6-Y2j"/>
+                        <outlet property="greenView" destination="KJA-91-Obe" id="ZDw-4L-F1X"/>
+                        <outlet property="redView" destination="cjP-2U-YHP" id="Vw7-d7-Snd"/>
+                        <outlet property="yellowView" destination="mdK-pm-xv7" id="D1r-Up-SEK"/>
+                        <outletCollection property="viewsCollection" destination="cjP-2U-YHP" collectionClass="NSMutableArray" id="rMd-Mb-bmW"/>
+                        <outletCollection property="viewsCollection" destination="mdK-pm-xv7" collectionClass="NSMutableArray" id="fdj-Z2-te7"/>
+                        <outletCollection property="viewsCollection" destination="KJA-91-Obe" collectionClass="NSMutableArray" id="z6a-it-dIy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
