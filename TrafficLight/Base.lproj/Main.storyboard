@@ -16,30 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-2U-YHP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-2U-YHP">
                                 <rect key="frame" x="110" y="20" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.25981115839607416" blue="0.087439240638411575" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="7DV-uu-mDl"/>
+                                    <constraint firstAttribute="width" secondItem="cjP-2U-YHP" secondAttribute="height" multiplier="1:1" id="9JZ-6C-guJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Cea-95-8YX"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdK-pm-xv7">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdK-pm-xv7">
                                 <rect key="frame" x="110" y="128" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJA-91-Obe">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJA-91-Obe">
                                 <rect key="frame" x="110" y="236" width="100" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.13548756815868945" green="0.86078917980194092" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjM-bJ-TNG">
-                                <rect key="frame" x="85" y="373" width="150" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMu-eH-NOp">
+                                <rect key="frame" x="85" y="390" width="150" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="j3K-9o-Nvc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="xK1-kW-vcj"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="NEXT"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mdK-pm-xv7" secondAttribute="trailing" constant="110" id="5dp-xa-VUI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uMu-eH-NOp" secondAttribute="bottom" constant="40" id="A4g-5a-dTC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KJA-91-Obe" secondAttribute="trailing" constant="110" id="BHb-bn-7xU"/>
+                            <constraint firstItem="KJA-91-Obe" firstAttribute="top" secondItem="mdK-pm-xv7" secondAttribute="bottom" constant="8" symbolic="YES" id="BXo-Gh-PU4"/>
+                            <constraint firstItem="mdK-pm-xv7" firstAttribute="top" secondItem="cjP-2U-YHP" secondAttribute="bottom" constant="8" symbolic="YES" id="I6k-ls-eQR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cjP-2U-YHP" secondAttribute="trailing" constant="110" id="Oaa-63-EpU"/>
+                            <constraint firstItem="mdK-pm-xv7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="QPh-kv-qJ1"/>
+                            <constraint firstItem="KJA-91-Obe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="TBX-rq-nhi"/>
+                            <constraint firstItem="cjP-2U-YHP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="ZJZ-dI-V1e"/>
+                            <constraint firstItem="KJA-91-Obe" firstAttribute="width" secondItem="mdK-pm-xv7" secondAttribute="width" id="ZZS-pM-L7D"/>
+                            <constraint firstItem="uMu-eH-NOp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cnk-zZ-FTH"/>
+                            <constraint firstItem="KJA-91-Obe" firstAttribute="height" secondItem="mdK-pm-xv7" secondAttribute="height" multiplier="1.01" id="paz-bZ-e1s"/>
+                            <constraint firstItem="uMu-eH-NOp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5:16" id="pfH-TN-WLP"/>
+                            <constraint firstItem="mdK-pm-xv7" firstAttribute="height" secondItem="cjP-2U-YHP" secondAttribute="height" id="rAv-sV-WgZ"/>
+                            <constraint firstItem="mdK-pm-xv7" firstAttribute="width" secondItem="cjP-2U-YHP" secondAttribute="width" id="xFK-7y-56e"/>
+                            <constraint firstItem="cjP-2U-YHP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xIZ-S1-Jbo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
