@@ -27,7 +27,10 @@ class ViewController: UIViewController {
         collorButton.layer.cornerRadius = 20
     }
     
+    @IBOutlet var collorViewsCollection: [UIView]!
+    
     @IBAction func changeAlphaButton() {
+        
     }
     
 }
