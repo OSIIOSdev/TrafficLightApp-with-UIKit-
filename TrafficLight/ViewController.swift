@@ -32,7 +32,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeAlphaButton() {
-        
+        for someView in viewsCollection {
+            if someView.alpha < 1 {
+                someView.alpha = 1
+            }
+        }
     }
     
 }
